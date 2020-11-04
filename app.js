@@ -13,12 +13,14 @@ class BindButton extends React.Component {
   }
 }
 
-// const Button = props => {
-//   return <button onClick={props.onClick}>Click me!</button>;
-// }
+const Button = (props) => {
+  return <button onClick={props.onClick}>Click me!</button>;
+};
 
 ReactDOM.render(
-  // <Button onClick={() => alert("use handler form props")} />,  // use props
-  <BindButton />,
-  document.getElementById('root')
-)
+  <div>
+    <Button onClick={() => alert("use handler form props")} />
+    <BindButton />
+  </div>,
+  document.getElementById("root")
+);

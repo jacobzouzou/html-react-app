@@ -5,7 +5,7 @@ React  is js library
   React Native for mobile browser
 
 Install:
-add react components (React and React DOM) from cdn:
+add react components (React and React DOM) from cdn
 
 Example:
 
@@ -24,7 +24,7 @@ Display component in index.html file that must contain root elt with an id="app"
 
 example:
   ReactDOM.render(
-    <button/>,document.getElementById("app")
+    <button/>, document.getElementById("app")
   );
 
 After these tags, is js script file or local script:
@@ -62,6 +62,6 @@ or use sandox
  **************************************************
 Fix CORS error from html app (see html-react-app)
 **************************************************
-start chrome  --allow-file-access-from-files "C:\Users\jacob\source\repos\JS Frameworks\React\Flavio\html-react-app\index.html"
+start chrome  --allow-file-access-from-files "C:\Users\jacob\source\repos\ISI\Learnings\JS Frameworks\React\Flavio\html-react-app\index.html"
 //or run file in a small web server: 
 express, docker, ...
