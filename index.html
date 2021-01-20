@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Hello!</title>
+    <title>React and HTMl file</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <h1>Hi there!</h1>
+    <h1 style="text-align: center;">React: Simple HTML file</h1>
 
     <p>
-        I'm your cool new webpage. Made by Flavio <a href="https://flaviocopes.com">flaviocopes.com</a>!
+        Flavio <a href="https://flaviocopes.com">flaviocopes.com</a>!
     </p>
 
     <div id="root"> </div>
@@ -29,21 +29,23 @@
 
     <script type="text/babel">
 
-        const Button = props => {
+        //function component
+        const Button = (props) => {
             return (<button onClick={props.onClick}>{props.text}</button>);
         }
 
-        const MyButton = props => {
+        const MyButton = (props) => {
             return <Button text={props.caption} onClick={props.onClick} />
         }
 
         const buttonClicHandler = () => {
-            alert("Main click handler !");
+            alert("Standalone click handler !");
         }
 
+        //class component
         class Home extends React.Component {
             onClick() {
-                alert("Home click handler");
+                alert("Class component click handler");
             }
             render() {
                 return (

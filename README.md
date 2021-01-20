@@ -2,7 +2,7 @@ React  is js library
   Easy to integrate in existing project
   Core concepts: components, JSX - JavaScript and XML -, state, props
   React is independant from browser
-  React Native for mobile browser
+  React Native (for mobile browser)
 
 Install:
 add react components (React and React DOM) from cdn
@@ -20,11 +20,12 @@ Example:
     return <button>Save</button>;
   }
 
-Display component in index.html file that must contain root elt with an id="app" 
+Display component in index.html file that must contain root elt (with an id="app") 
 
 example:
   ReactDOM.render(
-    <button/>, document.getElementById("app")
+    <button/>, 
+    document.getElementById("app")
   );
 
 After these tags, is js script file or local script:
@@ -36,9 +37,9 @@ After these tags, is js script file or local script:
   </script> 
 
 To install babel from CLI:
-1 install babel: npm install @babel/preset-env --save-dev 
-2 add babel config ".babelrc"
-3 add the following content to config file:
+  1 install babel: npm install @babel/preset-env --save-dev 
+  2 add babel config ".babelrc"
+  3 add the following content to config file:
 
   {
       "presets": [
@@ -50,7 +51,7 @@ To install babel from CLI:
 * Use a React project 
 *************************************************************
  1 npm install create-react-app 
- 2 "npx create-react-app project_name" or "npm create-react-app project_name" 
+ 2 luanch : "npx create-react-app project_name" or "npm create-react-app project_name" 
  
 or use sandox
  - https://codesandbox.io/s/:
@@ -62,6 +63,6 @@ or use sandox
  **************************************************
 Fix CORS error from html app (see html-react-app)
 **************************************************
-start chrome  --allow-file-access-from-files "C:\Users\jacob\source\repos\ISI\Learnings\JS Frameworks\React\Flavio\html-react-app\index.html"
+start chrome  --allow-file-access-from-files "C:\Users\jacob\source\repos\Learning\JS Frameworks\React\Flavio\html-react-app\index.html"
 //or run file in a small web server: 
 express, docker, ...

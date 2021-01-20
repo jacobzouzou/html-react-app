@@ -2,7 +2,7 @@
 
 class BindButton extends React.Component {
   onClick() {
-    alert("button clicked !");
+    alert("Classc component click handler !");
   }
   render() {
     return (
@@ -19,7 +19,7 @@ const Button = (props) => {
 
 ReactDOM.render(
   <div>
-    <Button onClick={() => alert("use handler form props")} />
+    <Button onClick={() => alert("Standalone handler form props")} />
     <BindButton />
   </div>,
   document.getElementById("root")
