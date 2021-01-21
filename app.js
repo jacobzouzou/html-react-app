@@ -2,10 +2,10 @@
 
 class BindButton extends React.Component {
   onClick() {
-    alert("Classc component click handler !");
+    alert("Classic component click handler !");
   }
   render() {
-    return (
+  return (
       <div>
         <button onClick={this.onClick}>Bind button</button>
       </div>
