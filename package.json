@@ -1,0 +1,29 @@
+{
+  "name": "html-react-app",
+  "version": "1.0.0",
+  "description": "React  is js library  \r Easy to integrate in existing project  \r Core concepts: components, JSX - JavaScript and XML -, state, props  \r React is independant from browser  \r React Native (for mobile browser)",
+  "main": "app.js",
+  "scripts": {
+    "start":"http-server -a localhost -p 3001",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobzouzou/html-react-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobzouzou/html-react-app/issues"
+  },
+  "homepage": "https://github.com/jacobzouzou/html-react-app#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^10.0.0"
+  },
+  "devDependencies": {
+    "concurrency": "^0.1.4",
+    "http-server": "^0.12.3"
+  }
+}
