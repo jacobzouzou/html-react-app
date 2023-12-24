@@ -1,26 +1,27 @@
 /* If you're feeling fancy you can add interactivity to your site with Javascript */
 
 class BindButton extends React.Component {
-  onClick() {
-    alert("Classic component click handler !");
+  alert() {
+    alert("Hello!");
   }
   render() {
-  return (
+    return (
       <div>
-        <button onClick={this.onClick}>Bind button</button>
+        <button onClick={this.alert}>Component</button>
       </div>
     );
   }
 }
 
+//local component: user props to bin handler
 const Button = (props) => {
-  return <button onClick={props.onClick}>Click me!</button>;
+  return <button onClick={props.display}>Component props</button>;
 };
 
 ReactDOM.render(
   <div>
-    <Button onClick={() => alert("Standalone handler form props")} />
     <BindButton />
+    <Button display={() => alert("Hello props!")} />
   </div>,
   document.getElementById("root")
 );
